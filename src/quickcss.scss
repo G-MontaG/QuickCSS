@@ -1,3 +1,7 @@
+@function parse($val) {
+  @return $val / ($val * 0 + 1);
+}
+
 $margin-min: 0px;
 $margin-max: 100px;
 $margin-step: 5px;
