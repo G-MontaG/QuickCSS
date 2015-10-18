@@ -7,15 +7,15 @@ $i: $margin-min;
     }
     $i: $i + 1;
   } @else if $i < 10 {
-    .m-#{$i} { margin: #{$i}px; }
+    .m-#{$i} { margin: #{$i}; }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .m-#{$mark}-#{$i} { margin-#{$side}: #{$i}px; }
+      .m-#{$mark}-#{$i} { margin-#{$side}: #{$i}; }
     }
     $i: $i + 1;
   } @else {
-    .m-#{$i} { margin: #{$i}px; }
+    .m-#{$i} { margin: #{$i}; }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .m-#{$mark}-#{$i} { margin-#{$side}: #{$i}px; }
+      .m-#{$mark}-#{$i} { margin-#{$side}: #{$i}; }
     }
     $i: $i + $margin-step;
   }

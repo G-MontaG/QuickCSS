@@ -1,9 +1,14 @@
-$margin-min: 0;
-$margin-max: 100;
-$margin-step: 5;
+$margin-min: 0px;
+$margin-max: 100px;
+$margin-step: 5px;
 @import "margins";
 
-$padding-min: 0;
-$padding-max: 100;
-$padding-step: 5;
+$padding-min: 0px;
+$padding-max: 100px;
+$padding-step: 5px;
 @import "paddings";
+
+$center-width: (400px, 600px);
+$center-height: (400px, 600px);
+$center-width-height: (400px, 400px) (600px, 600px);
+@import "center";

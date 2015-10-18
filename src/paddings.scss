@@ -7,15 +7,15 @@ $i: $padding-min;
     }
     $i: $i + 1;
   } @else if $i < 10 {
-    .p-#{$i} { padding: #{$i}px; }
+    .p-#{$i} { padding: #{$i}; }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .p-#{$mark}-#{$i} { padding-#{$side}: #{$i}px; }
+      .p-#{$mark}-#{$i} { padding-#{$side}: #{$i}; }
     }
     $i: $i + 1;
   } @else {
-    .p-#{$i} { padding: #{$i}px; }
+    .p-#{$i} { padding: #{$i}; }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .p-#{$mark}-#{$i} { padding-#{$side}: #{$i}px; }
+      .p-#{$mark}-#{$i} { padding-#{$side}: #{$i}; }
     }
     $i: $i + $padding-step;
   }
