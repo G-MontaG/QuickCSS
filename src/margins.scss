@@ -1,0 +1,22 @@
+$i: $margin-min;
+@while $i <= $margin-max {
+  @if $i == 0 {
+    .no-m { margin: $i !important; }
+    @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
+      .no-m-#{$mark} { margin-#{$side}: $i !important; }
+    }
+    $i: $i + 1;
+  } @else if $i < 10 {
+    .m-#{$i} { margin: #{$i}px; }
+    @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
+      .m-#{$mark}-#{$i} { margin-#{$side}: #{$i}px; }
+    }
+    $i: $i + 1;
+  } @else {
+    .m-#{$i} { margin: #{$i}px; }
+    @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
+      .m-#{$mark}-#{$i} { margin-#{$side}: #{$i}px; }
+    }
+    $i: $i + $margin-step;
+  }
+}

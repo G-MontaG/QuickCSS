@@ -23,7 +23,7 @@ function errorAlert(err) {
 
 gulp.task('dist', function () {
   gulp.src(path.src)
-    .pipe(sass({style: 'expanded'}).on('error', errorAlert))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', errorAlert))
     .pipe(prefixer({
       browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4']
     }).on('error', errorAlert))
@@ -33,7 +33,7 @@ gulp.task('dist', function () {
 gulp.task('dist:min', function () {
   gulp.src(path.src)
     .pipe(sourcemaps.init().on('error', errorAlert))
-    .pipe(sass({style: 'expanded'}).on('error', errorAlert))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', errorAlert))
     .pipe(prefixer({
       browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4']
     }).on('error', errorAlert))

@@ -1,3 +1,4 @@
-body {
-  background-color: white;
-}
+$margin-min: 0;
+$margin-max: 100;
+$margin-step: 5;
+@import "margins";
