@@ -2,3 +2,8 @@ $margin-min: 0;
 $margin-max: 100;
 $margin-step: 5;
 @import "margins";
+
+$padding-min: 0;
+$padding-max: 100;
+$padding-step: 5;
+@import "paddings";

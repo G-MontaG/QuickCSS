@@ -46,6 +46,7 @@ gulp.task('dist:min', function () {
 gulp.task('watch', function () {
   watch([path.watch], function () {
     gulp.start('dist');
+    gulp.start('dist:min');
   });
 });
 
