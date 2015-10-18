@@ -1,0 +1,31 @@
+{
+  "name": "QuickCSS",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Automated compilation of helper classes from sass sources specifically for your project.",
+  "keywords": ["QuickCSS", "quick css", "helpers", "css classes", "css", "css helpers"],
+  "homepage": "https://github.com/G-MontaG/QuickCSS",
+  "license": "MIT",
+  "author": {
+    "name": "Arthur Osipenko",
+    "email": "arthur.osipenko@gmail.com",
+    "url": "https://github.com/G-MontaG"
+  },
+  "contributors": [],
+  "engines": {
+    "node": ">=0.12.7",
+    "npm": ">=2.11.3"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.5",
+    "rimraf": "^2.4.3"
+  }
+}
