@@ -1,0 +1,19 @@
+@each $mark, $i in (block: block,
+                    inblock: inline-block,
+                    in: inline,
+                    flex: flex,
+                    inflex: inline-flex,
+                    inherit: inherit,
+                    none: none) {
+  .d-#{$mark} {
+    display: $i;
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}

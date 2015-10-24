@@ -1259,12 +1259,12 @@
 /*centering with known dimensions*/
 /*implement this for child*/
 /*require for center-parent*/
-.center-known-401-400 {
+.center-known-400-400 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400.5px;
-  margin-left: -200.25px;
+  width: 400px;
+  margin-left: -200px;
   height: 400px;
   margin-top: -200px;
 }
@@ -1294,4 +1294,47 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/*Display classes generator*/
+.d-block {
+  display: block;
+}
+
+.d-inblock {
+  display: inline-block;
+}
+
+.d-in {
+  display: inline;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-inflex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.d-inherit {
+  display: inherit;
+}
+
+.d-none {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
 }
