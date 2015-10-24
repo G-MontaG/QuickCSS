@@ -11,3 +11,13 @@
     }
   }
 }
+
+@each $mark in (tb, rl, all) {
+  @each $type, $prop in $border  {
+    .b-#{$mark}-#{$type} {
+      @if $mark == tb { border-top: $prop; border-bottom: $prop; }
+      @else if $mark == rl { border-right: $prop; border-left: $prop; }
+      @else { border: $prop; }
+    }
+  }
+}
