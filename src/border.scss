@@ -1,0 +1,13 @@
+@each $mark, $color in $border-color {
+  .b-#{$mark} {
+    border-color: $color;
+  }
+}
+
+@each $mark, $side in (t: top, r: right, b: bottom, l: left) {
+  @each $type, $prop in $border  {
+    .b-#{$mark}-#{$type} {
+      border-#{$side}: $prop;
+    }
+  }
+}

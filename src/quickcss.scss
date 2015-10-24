@@ -57,3 +57,8 @@ $center-width-height: (400px, 400px) (600px, 600px);
 /*Display classes generator*/
 @import "display";
 
+
+/*Border classes generator*/
+$border-color: (black: #000, grey: #e5e9ec, transparent: rgba(0, 0, 0, 0.4));
+$border: (sm: 1px solid, lg: 5px solid);
+@import "border";

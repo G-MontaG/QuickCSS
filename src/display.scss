@@ -1,4 +1,4 @@
-@each $mark, $i in (block: block,
+@each $mark, $prop in (block: block,
                     inblock: inline-block,
                     in: inline,
                     flex: flex,
@@ -6,7 +6,7 @@
                     inherit: inherit,
                     none: none) {
   .d-#{$mark} {
-    display: $i;
+    display: $prop;
   }
 }
 

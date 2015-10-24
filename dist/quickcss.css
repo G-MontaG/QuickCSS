@@ -1338,3 +1338,48 @@
 .invisible {
   visibility: hidden;
 }
+
+/*Border classes generator*/
+.b-black {
+  border-color: #000;
+}
+
+.b-grey {
+  border-color: #e5e9ec;
+}
+
+.b-transparent {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.b-t-sm {
+  border-top: 1px solid;
+}
+
+.b-t-lg {
+  border-top: 5px solid;
+}
+
+.b-r-sm {
+  border-right: 1px solid;
+}
+
+.b-r-lg {
+  border-right: 5px solid;
+}
+
+.b-b-sm {
+  border-bottom: 1px solid;
+}
+
+.b-b-lg {
+  border-bottom: 5px solid;
+}
+
+.b-l-sm {
+  border-left: 1px solid;
+}
+
+.b-l-lg {
+  border-left: 5px solid;
+}
