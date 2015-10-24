@@ -1,0 +1,5 @@
+/*Parse function is used to convert any units to simple numbers*/
+/*Round value to integer*/
+@function parse($val) {
+  @return round($val / ($val * 0 + 1));
+}

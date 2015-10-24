@@ -1,26 +1,26 @@
-/* implement this for parent */
+/*implement this for parent*/
 .center-parent {
   position: relative;
 }
 
-/* centering with unknown dimensions */
-/* implement this for child */
-/* require for center-parent */
-@mixin center-child-unknown {
+/*centering with unknown dimensions*/
+/*implement this for child*/
+/*require for center-parent*/
+@mixin center-unknown {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.center-child-unknown {
-  @include center-child-unknown;
+.center-unknown {
+  @include center-unknown;
 }
 
-/* centering with known width */
-/* implement this for child */
-/* require for center-parent */
-@mixin center-child-known-w ($width) {
+/*centering with known width*/
+/*implement this for child*/
+/*require for center-parent*/
+@mixin center-known-w ($width) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,15 +30,15 @@
 }
 
 @each $i in $center-width {
-  .center-child-known-w {
-    @include center-child-known-w($i);
+  .center-known-w-#{parse($i)} {
+    @include center-known-w($i);
   }
 }
 
-/* centering with known height */
-/* implement this for child */
-/* require for center-parent */
-@mixin center-child-known-h ($height) {
+/*centering with known height*/
+/*implement this for child*/
+/*require for center-parent*/
+@mixin center-known-h ($height) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,15 +48,15 @@
 }
 
 @each $i in $center-height {
-  .center-child-known-h {
-    @include center-child-known-h($i);
+  .center-known-h-#{parse($i)} {
+    @include center-known-h($i);
   }
 }
 
-/* centering with known dimensions */
-/* implement this for child */
-/* require for center-parent */
-@mixin center-child-known ($width, $height) {
+/*centering with known dimensions*/
+/*implement this for child*/
+/*require for center-parent*/
+@mixin center-known ($width, $height) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -67,13 +67,13 @@
 }
 
 @each $w, $h in $center-width-height {
-  .center-child-known {
-    @include center-child-known($w, $h);
+  .center-known-#{parse($w)}-#{parse($h)} {
+    @include center-known($w, $h);
   }
 }
 
-/* implement for parent */
-/* don't require for center-parent */
+/*implement for parent*/
+/*don't require for center-parent*/
 .center-flex {
   display: flex;
   justify-content: center;

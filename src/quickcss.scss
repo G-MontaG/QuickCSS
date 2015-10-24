@@ -1,18 +1,55 @@
-@function parse($val) {
-  @return $val / ($val * 0 + 1);
-}
+/*********************************************************************************************************************/
+/*QuickCSS library v0.0.1*/
+/*Automated compilation of helper classes from sass sources specifically for your project.*/
+/*Author: Arthur Osipenko
+          arthur.osipenko@gmail.com
+          https://github.com/G-MontaG  */
 
+/*By changing the values of the variables in this file you can customize helper classes to fit your needs*/
+
+/*Please note that all functions are universal and compatible with the all units (px, em, %, etc)*/
+/*However, not all functions are supported float numbers. They have corresponding warning.*/
+/*Also I recommend use px*/
+/*********************************************************************************************************************/
+
+
+/*Convert all units to integer*/
+/*An internal library function. Never mind.*/
+@import "parse";
+
+
+/*Margins classes generator*/
+/*Margin-min and margin-max is range of the generator*/
+/*Margin-step start to work after 10 value. Before margin-step always 1.*/
 $margin-min: 0px;
 $margin-max: 100px;
 $margin-step: 5px;
+/*WARN: don't support float*/
 @import "margins";
 
+
+/*Padding classes generator*/
+/*Padding-min and padding-max is range of the generator*/
+/*Padding-step start to work after 10 value. Before padding-step always 1.*/
 $padding-min: 0px;
 $padding-max: 100px;
 $padding-step: 5px;
+/*WARN: don't support float*/
 @import "paddings";
+
+
+/*Centering classes generator*/
+/*Set center-width for child if tou know this value*/
+/*Set center-height for child if tou know this value*/
+/*Set all properties in center-width-height or don't set anything*/
+/*Also, you got flex centering*/
+
+/*Help for you:
+  $center-width: (400px, 600px); -> .center-known-w-400 and center-known-w-600
+  $center-width-height: (400px, 400px) (600px, 600px) -> .center-known-400-400 .center-known-600-600  */
 
 $center-width: (400px, 600px);
 $center-height: (400px, 600px);
 $center-width-height: (400px, 400px) (600px, 600px);
 @import "center";
+
