@@ -1,5 +1,4 @@
 # QuickCSS
------------
 
 **QuickCSS - library of helper classes in sass sources specifically for your project.**
 I developed this library to speed up the process of constructing websites. 
@@ -42,8 +41,6 @@ With helpers I don't need it.
 ```
 
 ##Using
---------
-
 
 You can use the library as follows:
 
@@ -74,7 +71,6 @@ You can use the library as follows:
 3. Download release and put scss sources in your project. 
 
 ## Done
----------
 
 - margin.scss,
 - padding.scss,
@@ -83,7 +79,6 @@ You can use the library as follows:
 - display.scss
 
 ## Will be done
-----------------
 
 - border-radius,
 - shadow,
@@ -101,7 +96,7 @@ You can use the library as follows:
 - compilation flags (on/off the creation of very specific classes)
 
 ##Author
------------
+
 Arthur Osipenko - G-MontaG
 arthur.osipenko@gmail.com
 https://github.com/G-MontaG
