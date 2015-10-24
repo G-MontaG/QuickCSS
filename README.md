@@ -98,5 +98,7 @@ You can use the library as follows:
 ##Author
 
 Arthur Osipenko - G-MontaG
+
 arthur.osipenko@gmail.com
+
 https://github.com/G-MontaG
