@@ -1296,49 +1296,6 @@
           align-items: center;
 }
 
-/*Display classes generator*/
-.d-block {
-  display: block;
-}
-
-.d-inblock {
-  display: inline-block;
-}
-
-.d-in {
-  display: inline;
-}
-
-.d-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.d-inflex {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.d-inherit {
-  display: inherit;
-}
-
-.d-none {
-  display: none;
-}
-
-.visible {
-  visibility: visible;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 /*Border classes generator*/
 .b-black {
   border-color: #000;
@@ -1410,4 +1367,80 @@
 
 .b-all-lg {
   border: 5px solid;
+}
+
+/*Border radius classes generator*/
+.b-radius-3 {
+  border-radius: 3px;
+}
+
+.b-radius-5 {
+  border-radius: 5px;
+}
+
+.b-radius-t-3 {
+  border-radius: 3px 3px 0 0;
+}
+
+.b-radius-t-5 {
+  border-radius: 5px 5px 0 0;
+}
+
+.b-radius-r-3 {
+  border-radius: 0 3px 3px 0;
+}
+
+.b-radius-r-5 {
+  border-radius: 0 5px 5px 0;
+}
+
+.b-radius-b-3 {
+  border-radius: 0 0 3px 3px;
+}
+
+.b-radius-b-5 {
+  border-radius: 0 0 5px 5px;
+}
+
+/*Display classes generator*/
+.d-block {
+  display: block;
+}
+
+.d-inblock {
+  display: inline-block;
+}
+
+.d-in {
+  display: inline;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-inflex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.d-inherit {
+  display: inherit;
+}
+
+.d-none {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
 }

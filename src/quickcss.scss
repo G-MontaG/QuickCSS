@@ -54,11 +54,16 @@ $center-width-height: (400px, 400px) (600px, 600px);
 @import "center";
 
 
-/*Display classes generator*/
-@import "display";
-
-
 /*Border classes generator*/
 $border-color: (black: #000, grey: #e5e9ec, transparent: rgba(0, 0, 0, 0.4));
 $border: (sm: 1px solid, lg: 5px solid);
 @import "border";
+
+
+/*Border radius classes generator*/
+$border-radius: (3px, 5px);
+@import "border-radius";
+
+
+/*Display classes generator*/
+@import "display";
