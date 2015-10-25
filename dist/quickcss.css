@@ -1187,8 +1187,8 @@
 /*Set all properties in center-width-height or don't set anything*/
 /*Also, you got flex centering*/
 /*Help for you:
-  $center-width: (400px, 600px); -> .center-known-w-400 and center-known-w-600
-  $center-width-height: (400px, 400px) (600px, 600px) -> .center-known-400-400 .center-known-600-600  */
+  $center: (400px, 400px) (600px, 600px) -> .center-known-400-400 .center-known-600-600
+  $center-width: (400px, 600px); -> .center-known-w-400 and center-known-w-600  */
 /*implement this for parent*/
 .center-parent {
   position: relative;
@@ -1472,4 +1472,104 @@
 
 .invisible {
   visibility: hidden;
+}
+
+/*Box classes generator*/
+/*Help for you:
+  $box: (44px, 44px) (50px 50px); -> .box-44-44 .box-50-50
+  $box-w: (44px, 50px); -> .box-w-44 .box-w-50  */
+.box-inherit {
+  width: inherit;
+  height: inherit;
+}
+
+.box-44-44 {
+  width: 44px;
+  height: 44px;
+}
+
+.box-50-50 {
+  width: 50px;
+  height: 50px;
+}
+
+.box-100-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.box-200-100 {
+  width: 200px;
+  height: 100px;
+}
+
+.box-w-44 {
+  width: 44px;
+}
+
+.box-w-50 {
+  width: 50px;
+}
+
+.box-w-100 {
+  width: 100px;
+}
+
+.box-w-200 {
+  width: 200px;
+}
+
+.box-h-44 {
+  height: 44px;
+}
+
+.box-h-50 {
+  height: 50px;
+}
+
+.box-h-100 {
+  height: 100px;
+}
+
+.box-h-200 {
+  height: 200px;
+}
+
+.box-pr-100-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.box-pr-50-50 {
+  width: 50%;
+  height: 50%;
+}
+
+.box-pr-100-50 {
+  width: 100%;
+  height: 50%;
+}
+
+.box-pr-w-100 {
+  width: 100%;
+}
+
+.box-pr-w-50 {
+  width: 50%;
+}
+
+.box-pr-w-25 {
+  width: 25%;
+}
+
+.box-pr-h-100 {
+  height: 100%;
+}
+
+.box-pr-h-50 {
+  height: 50%;
+}
+
+.box-pr-h-25 {
+  height: 25%;
 }

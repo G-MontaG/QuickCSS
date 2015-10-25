@@ -1,0 +1,42 @@
+.box-inherit {
+  width: inherit;
+  height: inherit;
+}
+
+@each $val-w, $val-h in $box {
+  .box-#{parse($val-w)}-#{parse($val-h)} {
+    width: $val-w;
+    height: $val-h;
+  }
+}
+
+@each $val in $box-w {
+  .box-w-#{parse($val)} {
+    width: $val;
+  }
+}
+
+@each $val in $box-h {
+  .box-h-#{parse($val)} {
+    height: $val;
+  }
+}
+
+@each $pr-w, $pr-h in $box-in-percent {
+  .box-pr-#{parse($pr-w)}-#{parse($pr-h)} {
+    width: $pr-w;
+    height: $pr-h;
+  }
+}
+
+@each $pr in $box-in-percent-w {
+  .box-pr-w-#{parse($pr)} {
+    width: $pr;
+  }
+}
+
+@each $pr in $box-in-percent-h {
+  .box-pr-h-#{parse($pr)} {
+    height: $pr;
+  }
+}

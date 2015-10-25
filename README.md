@@ -76,12 +76,12 @@ You can use the library as follows:
 - padding.scss,
 - center.scss,
 - border.scss,
-- display.scss
+- display.scss,
+- border-radius.scss,
+- shadow.scss
 
 ## Will be done
 
-- border-radius,
-- shadow,
 - boxes,
 - position,
 - z-index,
