@@ -81,12 +81,11 @@ You can use the library as follows:
 - display.scss,
 - box.scss,
 - position.scss,
-- z-index.scss
+- z-index.scss,
+- fons-size.scss
 
 ## Will be done
 
-- font-face,
-- fons-size,
 - font-weight,
 - line-height,
 - text-decoration,

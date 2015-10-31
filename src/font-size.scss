@@ -1,0 +1,14 @@
+$i: $font-size-min;
+@while $i <= $font-size-max {
+  @if $i < 10 {
+    .fs-#{parse($i)} {
+      font-size: $i;
+    }
+    $i: $i + 1;
+  } @else {
+    .fs-#{parse($i)} {
+      font-size: $i;
+    }
+    $i: $i + $z-index-step;
+  }
+}

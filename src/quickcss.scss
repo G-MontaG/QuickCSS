@@ -105,3 +105,13 @@ $z-index-min: 0;
 $z-index-max: 100;
 $z-index-step: 5;
 @import "z-index";
+
+
+/*Font-size classes generator*/
+/*Font-size-min and font-size-max is range of the generator*/
+/*Font-size-step start to work after 10 value. Before font-size-step always 1.*/
+$font-size-min: 1px;
+$font-size-max: 50px;
+$font-size-step: 5px;
+/*WARN: don't support float*/
+@import "font-size";
