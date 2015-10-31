@@ -5,9 +5,9 @@
           arthur.osipenko@gmail.com
           https://github.com/G-MontaG  */
 /*By changing the values of the variables in this file you can customize helper classes to fit your needs*/
-/*Please note that all functions are universal and compatible with the all units (px, em, %, etc)*/
+/*Please note that all functions are universal and compatible with the all units (px, em, %, etc).*/
 /*However, not all functions are supported float numbers. They have corresponding warning.*/
-/*Also I recommend use px*/
+/*Also, I recommend use px.*/
 /*********************************************************************************************************************/
 /*Convert all units to integer*/
 /*An internal library function. Never mind.*/
@@ -1297,6 +1297,9 @@
 }
 
 /*Border classes generator*/
+/*Help for you:
+  $border-color: (black: #000, grey: #e5e9ec); -> .b-black .b-grey
+  $border: (sm: 1px solid, lg: 5px solid); -> .b-sm .b-lg */
 .b-black {
   border-color: #000;
 }
@@ -1307,6 +1310,34 @@
 
 .b-transparent {
   border-color: rgba(0, 0, 0, 0.4);
+}
+
+.b-sm {
+  border: 1px solid;
+}
+
+.b-lg {
+  border: 5px solid;
+}
+
+.b-tb-sm {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.b-tb-lg {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+}
+
+.b-rl-sm {
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.b-rl-lg {
+  border-right: 5px solid;
+  border-left: 5px solid;
 }
 
 .b-t-sm {
@@ -1339,34 +1370,6 @@
 
 .b-l-lg {
   border-left: 5px solid;
-}
-
-.b-tb-sm {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-}
-
-.b-tb-lg {
-  border-top: 5px solid;
-  border-bottom: 5px solid;
-}
-
-.b-rl-sm {
-  border-right: 1px solid;
-  border-left: 1px solid;
-}
-
-.b-rl-lg {
-  border-right: 5px solid;
-  border-left: 5px solid;
-}
-
-.b-all-sm {
-  border: 1px solid;
-}
-
-.b-all-lg {
-  border: 5px solid;
 }
 
 /*Border radius classes generator*/

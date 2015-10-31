@@ -4,20 +4,25 @@
   }
 }
 
-@each $mark, $side in (t: top, r: right, b: bottom, l: left) {
+@each $type, $prop in $border  {
+  .b-#{$type} {
+    border: $prop;
+  }
+}
+
+@each $mark in (tb, rl) {
   @each $type, $prop in $border  {
     .b-#{$mark}-#{$type} {
-      border-#{$side}: $prop;
+      @if $mark == tb { border-top: $prop; border-bottom: $prop; }
+      @else { border-right: $prop; border-left: $prop; }
     }
   }
 }
 
-@each $mark in (tb, rl, all) {
+@each $mark, $side in (t: top, r: right, b: bottom, l: left) {
   @each $type, $prop in $border  {
     .b-#{$mark}-#{$type} {
-      @if $mark == tb { border-top: $prop; border-bottom: $prop; }
-      @else if $mark == rl { border-right: $prop; border-left: $prop; }
-      @else { border: $prop; }
+      border-#{$side}: $prop;
     }
   }
 }

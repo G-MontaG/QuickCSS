@@ -76,13 +76,13 @@ You can use the library as follows:
 - padding.scss,
 - center.scss,
 - border.scss,
-- display.scss,
 - border-radius.scss,
-- shadow.scss
+- shadow.scss,
+- display.scss,
+- box.scss
 
 ## Will be done
 
-- boxes,
 - position,
 - z-index,
 - font-face,
@@ -94,6 +94,7 @@ You can use the library as follows:
 - truncate,
 - cursor,
 - compilation flags (on/off the creation of very specific classes)
+- add border radius for all corner
 
 ##Author
 

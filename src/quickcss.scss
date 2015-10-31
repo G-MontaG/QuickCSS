@@ -7,9 +7,9 @@
 
 /*By changing the values of the variables in this file you can customize helper classes to fit your needs*/
 
-/*Please note that all functions are universal and compatible with the all units (px, em, %, etc)*/
+/*Please note that all functions are universal and compatible with the all units (px, em, %, etc).*/
 /*However, not all functions are supported float numbers. They have corresponding warning.*/
-/*Also I recommend use px*/
+/*Also, I recommend use px.*/
 /*********************************************************************************************************************/
 
 
@@ -55,6 +55,11 @@ $center-height: (400px, 600px);
 
 
 /*Border classes generator*/
+
+/*Help for you:
+  $border-color: (black: #000, grey: #e5e9ec); -> .b-black .b-grey
+  $border: (sm: 1px solid, lg: 5px solid); -> .b-sm .b-lg */
+
 $border-color: (black: #000, grey: #e5e9ec, transparent: rgba(0, 0, 0, 0.4));
 $border: (sm: 1px solid, lg: 5px solid);
 @import "border";
@@ -86,3 +91,4 @@ $box-in-percent: (100%, 100%) (50%, 50%) (100%, 50%);
 $box-in-percent-w: (100%, 50%, 25%);
 $box-in-percent-h: (100%, 50%, 25%);
 @import "box";
+
