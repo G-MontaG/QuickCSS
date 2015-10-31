@@ -1907,3 +1907,28 @@
 .no-wrap {
   white-space: nowrap !important;
 }
+
+/*Cursor classes generator*/
+.cursor-d {
+  cursor: default;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.cursor-h {
+  cursor: help;
+}
+
+.cursor-m {
+  cursor: move;
+}
+
+.cursor-t {
+  cursor: text;
+}
+
+.cursor-c {
+  cursor: crosshair;
+}

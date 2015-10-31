@@ -1,0 +1,10 @@
+@each $mark, $prop in (d: default,
+  p: pointer,
+  h: help,
+  m: move,
+  t: text,
+  c: crosshair) {
+  .cursor-#{$mark} {
+    cursor: $prop;
+  }
+}

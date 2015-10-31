@@ -87,11 +87,11 @@ You can use the library as follows:
 - line-height.scss,
 - text-decoration.scss,
 - text-transform.scss,
-- truncate.scss
+- truncate.scss,
+- cursor.scss
 
 ## Will be done
 
-- cursor,
 - compilation flags (on/off the creation of very specific classes)
 - add border radius for all corner
 
