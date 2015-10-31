@@ -97,3 +97,11 @@ $position-top-bottom: (top: 0px, bottom: 0px);
 $position-right-left: (right: 0px, left: 0px);
 @import "position";
 
+
+/*Z-index classes generator*/
+/*Z-index-min and z-index-max is range of the generator*/
+/*Z-index-step start to work after 10 value. Before z-index-step always 1.*/
+$z-index-min: 0;
+$z-index-max: 100;
+$z-index-step: 5;
+@import "z-index";

@@ -1,0 +1,14 @@
+$i: $z-index-min;
+@while $i <= $z-index-max {
+  @if $i < 10 {
+    .z-#{parse($i)} {
+      z-index: $i;
+    }
+    $i: $i + 1;
+  } @else {
+    .z-#{parse($i)} {
+      z-index: $i;
+    }
+    $i: $i + $z-index-step;
+  }
+}

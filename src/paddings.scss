@@ -1,21 +1,33 @@
 $i: $padding-min;
 @while $i <= $padding-max {
   @if parse($i) == 0 {
-    .no-p { padding: $i !important; }
+    .no-p {
+      padding: $i !important;
+    }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .no-p-#{$mark} { padding-#{$side}: $i !important; }
+      .no-p-#{$mark} {
+        padding-#{$side}: $i !important;
+      }
     }
     $i: $i + 1;
   } @else if $i < 10 {
-    .p-#{parse($i)} { padding: $i; }
+    .p-#{parse($i)} {
+      padding: $i;
+    }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .p-#{$mark}-#{parse($i)} { padding-#{$side}: $i; }
+      .p-#{$mark}-#{parse($i)} {
+        padding-#{$side}: $i;
+      }
     }
     $i: $i + 1;
   } @else {
-    .p-#{parse($i)} { padding: $i; }
+    .p-#{parse($i)} {
+      padding: $i;
+    }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .p-#{$mark}-#{parse($i)} { padding-#{$side}: $i; }
+      .p-#{$mark}-#{parse($i)} {
+        padding-#{$side}: $i;
+      }
     }
     $i: $i + $padding-step;
   }

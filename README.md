@@ -80,11 +80,11 @@ You can use the library as follows:
 - shadow.scss,
 - display.scss,
 - box.scss,
-- position.scss
+- position.scss,
+- z-index.scss
 
 ## Will be done
 
-- z-index,
 - font-face,
 - fons-size,
 - font-weight,

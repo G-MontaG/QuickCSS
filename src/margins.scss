@@ -1,21 +1,33 @@
 $i: $margin-min;
 @while $i <= $margin-max {
   @if parse($i) == 0 {
-    .no-m { margin: $i !important; }
+    .no-m {
+      margin: $i !important;
+    }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .no-m-#{$mark} { margin-#{$side}: $i !important; }
+      .no-m-#{$mark} {
+        margin-#{$side}: $i !important;
+      }
     }
     $i: $i + 1;
   } @else if $i < 10 {
-    .m-#{parse($i)} { margin: $i; }
+    .m-#{parse($i)} {
+      margin: $i;
+    }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .m-#{$mark}-#{parse($i)} { margin-#{$side}: $i; }
+      .m-#{$mark}-#{parse($i)} {
+        margin-#{$side}: $i;
+      }
     }
     $i: $i + 1;
   } @else {
-    .m-#{parse($i)} { margin: $i; }
+    .m-#{parse($i)} {
+      margin: $i;
+    }
     @each $mark, $side in (t: top, r: right, b: bottom, l: left) {
-      .m-#{$mark}-#{parse($i)} { margin-#{$side}: $i; }
+      .m-#{$mark}-#{parse($i)} {
+        margin-#{$side}: $i;
+      }
     }
     $i: $i + $margin-step;
   }
