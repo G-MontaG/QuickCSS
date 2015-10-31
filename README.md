@@ -85,12 +85,12 @@ You can use the library as follows:
 - fons-size.scss,
 - font-weight.scss,
 - line-height.scss,
-- text-decoration.scss
+- text-decoration.scss,
+- text-transform.scss,
+- truncate.scss
 
 ## Will be done
 
-- text case,
-- truncate,
 - cursor,
 - compilation flags (on/off the creation of very specific classes)
 - add border radius for all corner

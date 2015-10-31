@@ -1892,3 +1892,18 @@
 .text-lwc {
   text-transform: lowercase;
 }
+
+/*Truncate classes generator*/
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.no-wrap {
+  white-space: nowrap !important;
+}
