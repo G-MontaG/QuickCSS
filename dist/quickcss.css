@@ -1883,3 +1883,12 @@
 .text-d-t {
   text-decoration: line-through;
 }
+
+/*Text-transform classes generator*/
+.text-upc {
+  text-transform: uppercase;
+}
+
+.text-lwc {
+  text-transform: lowercase;
+}
