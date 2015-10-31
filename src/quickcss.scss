@@ -92,3 +92,8 @@ $box-in-percent-w: (100%, 50%, 25%);
 $box-in-percent-h: (100%, 50%, 25%);
 @import "box";
 
+/*Position classes generator*/
+$position-top-bottom: (top: 0px, bottom: 0px);
+$position-right-left: (right: 0px, left: 0px);
+@import "position";
+

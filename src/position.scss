@@ -1,0 +1,23 @@
+@each $mark, $position in (abs: absolute, rel: relative, fix: fixed, st: static, in: inherit) {
+  .position-#{$mark} {
+    position: $position;
+  }
+}
+
+@each $pr-tb, $val-tb in $position-top-bottom {
+  .#{$pr-tb} {
+    #{$pr-tb}: $val-tb;
+  }
+  @each $pr-rl, $val-rl in $position-right-left {
+    .#{$pr-tb}-#{$pr-rl} {
+      #{$pr-tb}: $val-tb;
+      #{$pr-rl}: $val-rl;
+    }
+  }
+}
+
+@each $pr-rl, $val-rl in $position-right-left {
+  .#{$pr-rl} {
+    #{$pr-rl}: $val-rl;
+  }
+}

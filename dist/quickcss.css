@@ -1576,3 +1576,60 @@
 .box-pr-h-25 {
   height: 25%;
 }
+
+/*Position classes generator*/
+.position-abs {
+  position: absolute;
+}
+
+.position-rel {
+  position: relative;
+}
+
+.position-fix {
+  position: fixed;
+}
+
+.position-st {
+  position: static;
+}
+
+.position-in {
+  position: inherit;
+}
+
+.top {
+  top: 0px;
+}
+
+.top-right {
+  top: 0px;
+  right: 0px;
+}
+
+.top-left {
+  top: 0px;
+  left: 0px;
+}
+
+.bottom {
+  bottom: 0px;
+}
+
+.bottom-right {
+  bottom: 0px;
+  right: 0px;
+}
+
+.bottom-left {
+  bottom: 0px;
+  left: 0px;
+}
+
+.right {
+  right: 0px;
+}
+
+.left {
+  left: 0px;
+}

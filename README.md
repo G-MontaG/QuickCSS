@@ -79,11 +79,11 @@ You can use the library as follows:
 - border-radius.scss,
 - shadow.scss,
 - display.scss,
-- box.scss
+- box.scss,
+- position.scss
 
 ## Will be done
 
-- position,
 - z-index,
 - font-face,
 - fons-size,
