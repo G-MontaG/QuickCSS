@@ -84,11 +84,11 @@ You can use the library as follows:
 - z-index.scss,
 - fons-size.scss,
 - font-weight.scss,
-- line-height.scss
+- line-height.scss,
+- text-decoration.scss
 
 ## Will be done
 
-- text-decoration,
 - text case,
 - truncate,
 - cursor,
