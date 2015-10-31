@@ -1,0 +1,5 @@
+@each $mark, $lh in $line-height {
+  .lh-#{$mark} {
+    line-height: $lh;
+  }
+}

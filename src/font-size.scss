@@ -9,6 +9,6 @@ $i: $font-size-min;
     .fs-#{parse($i)} {
       font-size: $i;
     }
-    $i: $i + $z-index-step;
+    $i: $i + $font-size-step;
   }
 }

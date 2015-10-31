@@ -119,3 +119,8 @@ $font-size-step: 5px;
 
 /*Font weight classes generator*/
 @import "font-weight";
+
+
+/*Line height classes generator*/
+$line-height: (sm: 12px, md: 16.8px, lg: 28px);
+@import "line-height";

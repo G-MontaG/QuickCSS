@@ -1857,3 +1857,16 @@
 .fw-ultra-bold {
   font-weight: 900;
 }
+
+/*Line height classes generator*/
+.lh-sm {
+  line-height: 12px;
+}
+
+.lh-md {
+  line-height: 16.8px;
+}
+
+.lh-lg {
+  line-height: 28px;
+}

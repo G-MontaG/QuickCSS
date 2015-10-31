@@ -83,11 +83,11 @@ You can use the library as follows:
 - position.scss,
 - z-index.scss,
 - fons-size.scss,
-- font-weight.scss
+- font-weight.scss,
+- line-height.scss
 
 ## Will be done
 
-- line-height,
 - text-decoration,
 - text case,
 - truncate,
