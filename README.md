@@ -82,11 +82,11 @@ You can use the library as follows:
 - box.scss,
 - position.scss,
 - z-index.scss,
-- fons-size.scss
+- fons-size.scss,
+- font-weight.scss
 
 ## Will be done
 
-- font-weight,
 - line-height,
 - text-decoration,
 - text case,

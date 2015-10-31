@@ -115,3 +115,7 @@ $font-size-max: 50px;
 $font-size-step: 5px;
 /*WARN: don't support float*/
 @import "font-size";
+
+
+/*Font weight classes generator*/
+@import "font-weight";

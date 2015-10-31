@@ -1,0 +1,11 @@
+@each $mark, $prop in (thin: 100,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  bold: 700,
+  extra-bold: 800,
+  ultra-bold: 900) {
+  .fw-#{$mark} {
+    font-weight: $prop;
+  }
+}

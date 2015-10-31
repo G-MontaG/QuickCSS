@@ -1,10 +1,10 @@
 @each $mark, $prop in (block: block,
-                    inblock: inline-block,
-                    in: inline,
-                    flex: flex,
-                    inflex: inline-flex,
-                    inherit: inherit,
-                    none: none) {
+  inblock: inline-block,
+  in: inline,
+  flex: flex,
+  inflex: inline-flex,
+  inherit: inherit,
+  none: none) {
   .d-#{$mark} {
     display: $prop;
   }

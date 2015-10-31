@@ -1828,3 +1828,32 @@
 .fs-50 {
   font-size: 50px;
 }
+
+/*Font weight classes generator*/
+.fw-thin {
+  font-weight: 100;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-extra-bold {
+  font-weight: 800;
+}
+
+.fw-ultra-bold {
+  font-weight: 900;
+}
